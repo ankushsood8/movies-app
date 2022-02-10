@@ -10,7 +10,7 @@ appp.config(function($routeProvider) {
       })
 });
 appp.controller('ctrl', function ($scope) {
-
+$scope.x=true;
   $scope.namefield=null;
   $scope.passwordfield=null;
    $scope.enter=function(){ 
@@ -32,5 +32,9 @@ appp.controller('ctrl', function ($scope) {
         window.location.href="admindetails.php";
       }
    }
+ }
+ $scope.setvalue=function(){
+   $scope.x=false;
+   console.log("h");
  }
 });
